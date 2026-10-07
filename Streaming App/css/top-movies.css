@@ -1,0 +1,24 @@
+.section#top-movies .movie-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 5px;
+}
+
+.section#top-movies .movie-list .movie-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.section#top-movies .movie-card .movie-num {
+    position: absolute;
+    left: -50px;
+    font-size: 10em;
+    z-index: 1;
+}
+.section#top-movies .movie-thumbnail {
+    position: relative;
+    z-index: 2;
+}
