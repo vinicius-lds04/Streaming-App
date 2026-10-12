@@ -1,6 +1,6 @@
 .section#top-movies .movie-list {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     gap: 5px;
 }
@@ -18,7 +18,24 @@
     font-size: 10em;
     z-index: 1;
 }
+
 .section#top-movies .movie-thumbnail {
     position: relative;
     z-index: 2;
+}
+
+@media (max-width: 900px) {
+    .section#top-movies .movie-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .section#top-movies .movie-card .movie-num {
+        font-size: 6em;
+        left: -35px;
+    }
+
+    .section#top-movies .movie-list .movie-card {
+        margin-left: 35px;
+    }
 }
