@@ -1,6 +1,11 @@
 .header {
     padding: 20px 80px;
     border-bottom: 2px solid var(--cor-texto);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--cor-fundo);
 }
 
 .header .header-bar {

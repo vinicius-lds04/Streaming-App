@@ -24,6 +24,10 @@
     z-index: 2;
 }
 
+.section#top-movies .movie-info {
+    z-index: 3;
+}
+
 @media (max-width: 900px) {
     .section#top-movies .movie-list {
         grid-template-columns: 1fr;

@@ -2,4 +2,5 @@
 @import url(./header.css);
 @import url(./introducao.css);
 @import url(./top-movies.css);
-@import url(./new-movies.css);
+@import url(./movie-list.css);
+@import url(./modal.css);

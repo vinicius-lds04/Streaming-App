@@ -1,0 +1,34 @@
+.movie-card {
+    position: relative;
+}
+
+.movie-info {
+    position: absolute;
+    left: 5px;   
+    right: 5px;
+    bottom: 5px;
+    padding: 20px 12px 10px;
+    border-radius: 0 0 11px 11px;  
+    color: white;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+
+    opacity: 0;
+    transition: 0.25s;
+    pointer-events: none;
+}
+
+.movie-card:hover .movie-info {
+    opacity: 1;
+}
+
+.movie-info .movie-name {
+    font-size: 0.9em;
+}
+
+.movie-info p {
+    font-size: 0.75em;
+}
+
+.movie-card a {
+    display: block;
+}
