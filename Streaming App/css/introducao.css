@@ -63,8 +63,17 @@
 .button-box .button {
     display: flex;
     padding: 20px 30px;
+    border: 2px solid hwb(0 0% 100%);
+    background-color: rgb(240, 240, 240);
     align-items: center;
     gap: 10px;
+    transition: 0.25s;
+}
+
+.button-box .button:hover {
+    color: hsl(0, 0%, 100%);
+    background-color: rgb(50, 50, 50);
+    cursor: pointer;
 }
 
 #play-button {
