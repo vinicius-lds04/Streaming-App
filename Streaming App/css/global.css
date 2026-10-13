@@ -25,6 +25,9 @@ img {
 
 .main {
     margin: 20px 40px 10px;
+    border: 2px solid;
+    border-radius: 28px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .svg {
