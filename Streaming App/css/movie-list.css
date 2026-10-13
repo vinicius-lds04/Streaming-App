@@ -10,7 +10,7 @@
     padding: 20px 12px 10px;
     border-radius: 0 0 11px 11px;  
     color: white;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    background: linear-gradient(to top, rgba(51, 1, 54, 0.92), transparent);
 
     opacity: 0;
     transition: 0.25s;

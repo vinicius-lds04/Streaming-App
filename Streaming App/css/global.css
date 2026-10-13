@@ -1,8 +1,22 @@
 :root {
-    --cor-fundo: white;
-    --cor-texto: black;
-    --cor-botao: rgb(240, 240, 240);
-    --cor-botao-hover: rgb(50, 50, 50);
+    /* Paleta */
+    --roxo-escuro: #330136;
+    --vinho: #5E1742;
+    --vermelho-escuro: #962E40;
+    --vermelho: #C9463D;
+    --laranja: #FF5E35;
+
+    /* Tema */
+    --cor-fundo: var(--roxo-escuro);
+    --cor-superficie: var(--vinho);
+    --cor-borda: var(--vermelho-escuro);
+    --cor-destaque: var(--laranja);
+    --cor-destaque-hover: var(--vermelho);
+    --cor-texto: #ffffff;
+    --cor-texto-suave: rgba(255, 255, 255, 0.75);
+    --cor-botao: var(--laranja);
+    --cor-botao-texto: var(--roxo-escuro);
+    --cor-botao-hover: var(--vinho);
 }
 
 * {
@@ -25,7 +39,7 @@ img {
 
 .main {
     margin: 20px 40px 10px;
-    border: 2px solid;
+    border: 2px solid var(--cor-borda);
     border-radius: 28px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -65,13 +79,13 @@ img {
 }
 
 .movie-thumbnail:hover {
-    border-color: var(--cor-texto);
+    border-color: var(--cor-destaque);
 }
 
 .footer {
     text-align: center;
     padding: 20px;
-    border-top: 2px solid var(--cor-texto);
+    border-top: 2px solid var(--cor-borda);
     margin-top: 40px;
 }
 

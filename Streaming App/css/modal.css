@@ -21,7 +21,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(51, 1, 54, 0.85);
 }
 
 .modal-box {
@@ -30,8 +30,9 @@
     max-width: 900px;
     max-height: 90vh;
     overflow-y: auto;
-    background-color: rgb(24, 24, 24);
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
+    border: 2px solid var(--cor-borda);
     border-radius: 12px;
 }
 
@@ -46,8 +47,8 @@
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    background-color: rgb(24, 24, 24);
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     text-decoration: none;
     font-size: 1.2em;
 }
@@ -80,7 +81,7 @@
     align-items: center;
     gap: 12px;
     margin-bottom: 16px;
-    color: rgb(190, 190, 190);
+    color: var(--cor-texto-suave);
 }
 
 .modal-principal p {
@@ -93,7 +94,7 @@
 }
 
 .modal-lateral span {
-    color: rgb(150, 150, 150);
+    color: var(--cor-texto-suave);
 }
 
 @media (max-width: 600px) {
@@ -119,8 +120,8 @@
     margin-bottom: 12px;
     padding: 10px 14px;
     border-radius: 8px;
-    background-color: rgb(50, 50, 50);
-    color: rgb(220, 220, 220);
+    background-color: var(--cor-superficie);
+    color: var(--cor-texto);
     font-size: 0.9em;
 }
 
@@ -135,10 +136,10 @@
 .comentarios-texto {
     width: 100%;
     padding: 10px 14px;
-    border: 2px solid rgb(70, 70, 70);
+    border: 2px solid var(--cor-borda);
     border-radius: 12px;
-    background-color: rgb(40, 40, 40);
-    color: white;
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     resize: vertical;
 }
 
@@ -146,8 +147,8 @@
     padding: 10px 24px;
     border: none;
     border-radius: 20px;
-    background-color: rgb(240, 240, 240);
-    color: black;
+    background-color: var(--cor-destaque);
+    color: var(--cor-botao-texto);
     cursor: pointer;
 }
 
@@ -162,6 +163,6 @@
 }
 
 .comentarios-vazio {
-    color: rgb(150, 150, 150);
+    color: var(--cor-texto-suave);
     font-size: 0.9em;
 }

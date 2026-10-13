@@ -17,6 +17,7 @@
     left: -50px;
     font-size: 10em;
     z-index: 1;
+    color: var(--cor-destaque);
 }
 
 .section#top-movies .movie-thumbnail {

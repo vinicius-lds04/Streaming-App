@@ -24,7 +24,7 @@
     color: white;
     font-weight: bold;
     border-radius: 0 0 24px 24px;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+    background: linear-gradient(to top, rgba(51, 1, 54, 0.92), transparent);
 }
 
 .info-content .info-about {
@@ -64,18 +64,22 @@
 .button-box .button {
     display: flex;
     padding: 20px 30px;
-    border: 2px solid var(--cor-texto);
+    border: 2px solid var(--cor-destaque);
     background-color: var(--cor-botao);
-    color: var(--cor-texto);
+    color: var(--cor-botao-texto);
     align-items: center;
     gap: 10px;
     transition: 0.25s;
 }
 
 .button-box .button:hover {
-    color: var(--cor-fundo);
+    color: var(--cor-texto);
     background-color: var(--cor-botao-hover);
     cursor: pointer;
+}
+
+.button-box .button:hover #play-button {
+    filter: invert(1);
 }
 
 #play-button {

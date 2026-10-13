@@ -1,11 +1,11 @@
 .header {
     padding: 20px 80px;
-    border-bottom: 2px solid var(--cor-texto);
+    border-bottom: 2px solid var(--cor-borda);
 
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--cor-fundo);
+    background-color: var(--cor-superficie);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
@@ -27,7 +27,9 @@
 }
 
 .header .search-bar #search-text {
-    border: 2px solid var(--cor-texto);
+    border: 2px solid var(--cor-borda);
+    background-color: var(--cor-fundo);
+    color: var(--cor-texto);
     padding: 5px 10px;
     width: 250px;
     border-radius: 15px;
@@ -36,7 +38,7 @@
 .header .search-bar #search-button {
     cursor: pointer;
     border: none;
-    background-color: var(--cor-fundo);
+    background-color: transparent;
 }
 
 .header .menu .nav {
@@ -51,9 +53,19 @@
     align-items: center;
     text-decoration: none;
     color: var(--cor-texto);
-    border: 2px solid var(--cor-texto);
+    border: 2px solid var(--cor-borda);
     padding: 5px 15px;
     border-radius: 15px;
+    transition: 0.25s;
+}
+
+.header .nav .nav-item:hover {
+    border-color: var(--cor-destaque);
+    background-color: var(--cor-fundo);
+}
+
+.header .search-bar #search-text::placeholder {
+    color: var(--cor-texto-suave);
 }
 
 .header .svg {
